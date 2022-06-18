@@ -7,7 +7,7 @@ In this experiment, we kept only 20 labeled training data from each class and us
 
 Part A) We trained our model only using labeled training data and evaluated it on test data.
 
-Part B) Using unlabeled training data, we solved the problem of image angle detection as a pre-training problem. Then, we removed the end layers of the network and instead placed a layer with 10 neurons for classification. Then the model trained with these initial weights using labeled training data.
+Part B) Using unlabeled training data, we solved the problem of image angle detection as a pre-training problem. Then, we removed the end layers of the network and instead placed a layer with 10 neurons for classification. Then the model fine tuned with these initial weights using labeled training data.
 
 Part C) We changed our model to have two outputs: one output for angle classification and one output for 10-class classification. Then, we trained the model with all 50,000 training data. 49,800 sample data are not labeled Therefore, for this data, we set the output of the 10-class classification equal to the zero vector so as not to affect its loss function.
 
